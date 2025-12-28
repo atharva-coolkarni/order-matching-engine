@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="WgZAR64IQtTwY_Max6bv">
+    <mxGraphModel dx="1158" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-3" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-4" connectable="0" parent="hXoaP_hnxUdx6ZEfdTzy-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;div&gt;HTTP / REST&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1164" y="-1" as="geometry">
+            <mxPoint x="-9" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;Client&lt;/div&gt;&lt;div&gt;(Web / Trading App / Bot)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-9" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-13" connectable="0" parent="hXoaP_hnxUdx6ZEfdTzy-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;div&gt;Order Events&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0708" y="3" as="geometry">
+            <mxPoint x="1" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;API Layer&lt;/div&gt;&lt;div&gt;(Spring Boot)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-21" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;Order Ingress Queue&lt;/div&gt;&lt;div&gt;(BlockingQueue / Disruptor)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="510" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-16" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-17" connectable="0" parent="hXoaP_hnxUdx6ZEfdTzy-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;div&gt;Reads / Updates&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.01" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-19" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-20" connectable="0" parent="hXoaP_hnxUdx6ZEfdTzy-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;div&gt;Trade &amp;amp; Order Events (Append Only)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1533" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-23" edge="1" parent="1" source="hXoaP_hnxUdx6ZEfdTzy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="hXoaP_hnxUdx6ZEfdTzy-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-24" connectable="0" parent="hXoaP_hnxUdx6ZEfdTzy-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;div&gt;Trade Updates&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0133" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div&gt;Matching Engine Core&lt;/div&gt;&lt;div&gt;(Pure Java – Single Thread)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;• Order Processor&lt;/div&gt;&lt;div&gt;• Matching Logic&lt;/div&gt;&lt;div&gt;• Price-Time Priority&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Single-threaded for deterministic matching&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="190" x="485" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Order Book&#xa;(Bids &amp; Asks)" vertex="1">
+          <mxGeometry height="40" width="80" x="230" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-18" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=none;" value="Event Store&#xa;(PostgreSQL)" vertex="1">
+          <mxGeometry height="80" width="90" x="535" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="hXoaP_hnxUdx6ZEfdTzy-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Market Data / Notification&#xa;(WebSocket / API)" vertex="1">
+          <mxGeometry height="60" width="120" x="780" y="225" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
